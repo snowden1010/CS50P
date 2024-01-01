@@ -17,7 +17,7 @@ class PDF(FPDF):
         self.cell(w=0, h=10, text=text, border=0, align="C")
 
 if __name__ == "__main__":
-    name = input("Name")
+    name = input("Name: ")
     pdf = PDF(orientation="P", format="A4")
     pdf.add_page()
     pdf.header()
