@@ -5,7 +5,6 @@ class PDF(FPDF):
         text = "CS50 shirtificate"
 
         self.set_font("helvetica",style="", size=50)
-        # self.set_auto_page_break(auto=True, 10)
         self.cell(0, 90, text=text, border=0, align="C", center=True)
 
     def text_overlay(self, image_src, text):
